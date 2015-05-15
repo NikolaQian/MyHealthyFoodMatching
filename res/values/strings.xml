@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我的健康饮食</string>
+    <string name="hello_world">Hello world!</string>
+	
+	<string name="food_match">食物搭配表</string>
+	<string name="food_nutrition">食物营养表</string>
+	<string name="about">关于本软件</string>
+	
+	<string name="description_title">食物描述</string>
+	<string name="cannotmatching_title">不宜同食的食物列表</string>
+</resources>

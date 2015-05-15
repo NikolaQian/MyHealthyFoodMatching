@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/food_matching_listview_selector" >
+    <ImageView android:id="@+id/photo_listview_item"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:scaleType="fitXY"/>
+    
+	 <RelativeLayout android:layout_width="match_parent"
+	     android:layout_height="80dip"
+	     android:paddingLeft="5dip">
+	     <com.example.myhealthfood.ui.FZLanTingHeiSTextView android:id="@+id/name_listview_item"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentTop="true"
+	         android:textSize="50sp"
+	         android:textStyle="bold"
+	         android:textColor="@color/green"/>
+	     <com.example.myhealthfood.ui.FZLanTingHeiSTextView android:id="@+id/cannotMatchFood_listview_item"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentBottom="true"
+	         android:textColor="@color/red"/>
+	 </RelativeLayout>
+</LinearLayout>

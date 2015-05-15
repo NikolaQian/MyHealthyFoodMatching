@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/blueviolet" >
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dip"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView android:id="@+id/photo_food_matching_item"
+            android:layout_width="384dip"
+            android:layout_height="384dip"
+            android:layout_marginBottom="50dip"
+            android:scaleType="fitXY"/>
+        <com.example.myhealthfood.ui.FZLanTingHeiSTextView android:id="@+id/name_food_matching_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:background="@drawable/name_food_matching_bk"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="390dip"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="100dip">
+        <ScrollView android:layout_width="370dip"
+            android:layout_height="400dip">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.example.myhealthfood.ui.FZLanTingHeiSTextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description_title"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="@drawable/description_food_matching_title_bk"/>
+                <com.example.myhealthfood.ui.FZLanTingHeiSTextView android:id="@+id/description_food_matching_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textSize="15sp"
+                    android:textColor="@color/pink"
+                    android:text="测试"/>
+                
+                <com.example.myhealthfood.ui.FZLanTingHeiSTextView android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dip"
+                    android:text="@string/cannotmatching_title"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:background="@drawable/description_food_matching_title_bk"/>
+                <com.example.myhealthfood.ui.FZLanTingHeiSTextView android:id="@+id/cannotmatching_food_matching_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textSize="15sp"
+                    android:textColor="@color/sandybrown"
+                    android:text="测试"/>
+                <com.example.myhealthfood.ui.FZLanTingHeiSTextView android:id="@+id/cannotmatching_reason_food_matching_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/sandybrown"
+                    android:text="测试"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
